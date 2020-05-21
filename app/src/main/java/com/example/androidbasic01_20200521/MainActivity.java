@@ -37,6 +37,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        binding.goToSecondBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent secondIntend = new Intent(MainActivity.this, SecondActivity.class);
+
+                startActivity(secondIntend);
+            }
+        });
+
     }
 //    화면에 나와야할 데이터 세팅 코드 모아두는 곳
     void setValues() {
